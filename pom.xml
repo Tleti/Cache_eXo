@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.exoplatform</groupId>
+        <artifactId>exo.parent</artifactId>
+        <version>8.1</version>
+    </parent>
+    <groupId>com.exoplatform.cache</groupId>
+    <version>1.1.0-SNAPSHOT</version>
+    <artifactId>exo-cache-training</artifactId>
+    <packaging>jar</packaging>
+    <name>Multi-Instances - Config</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>UTF-8</encoding>
+                    <optimize>true</optimize>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.exoplatform.ws</groupId>
+            <artifactId>exo.ws.rest.core</artifactId>
+            <version>2.1.9-GA</version>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.kernel</groupId>
+            <artifactId>exo.kernel.component.cache</artifactId>
+            <version>2.3.10-GA-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.kernel</groupId>
+            <artifactId>exo.kernel.component.ext.cache.impl.jboss.v3</artifactId>
+            <version>2.3.10-GA-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.ecms</groupId>
+            <artifactId>exo-ecms-core-services</artifactId>
+            <version>2.3.10-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+</project>
